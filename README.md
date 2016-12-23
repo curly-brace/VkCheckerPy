@@ -1,6 +1,8 @@
 # VkCheckerPy
 ####Python (Qt) app to search groups in vkontakte for comments and discussions of the specific person
 
+Поиск коментариев вконтакте пользователя в группах на стене и в обсуждениях.
+
 Requires python3 and PyQt5 (may be even 4)
 
 Working implementation of comment and discussion search in groups.
