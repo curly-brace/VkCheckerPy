@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VKCheckerPy</string>
+  </property>
+  <widget class="QLineEdit" name="targetTxt">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>8</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string></string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getCommGrpBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>32</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Comment Groups</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getDiscGrpBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>56</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Discussion Groups</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="groupsList">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>80</y>
+     <width>161</width>
+     <height>433</height>
+    </rect>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::MultiSelection</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadGroupsBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>512</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveGroupsBtn">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>512</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getCommentsBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>560</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Wall Comments</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="getDiscussionsBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>584</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Discussions</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="postsBar">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>590</y>
+     <width>657</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="groupsBar">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>560</y>
+     <width>657</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="postsLbl">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>576</y>
+     <width>145</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Post 0/0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="groupsLbl">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>544</y>
+     <width>145</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Group 0/0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="selectAllBtn">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>536</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="selectNoneBtn">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>536</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select None</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="commentsList">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>8</y>
+     <width>649</width>
+     <height>529</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
