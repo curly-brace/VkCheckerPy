@@ -19,7 +19,7 @@ class VkCheck:
         try:
             vk_session.authorization()
         except vk_api.AuthorizationError as error_msg:
-            self.win.add_comment('auth error!')
+            self.win.add_comment('auth error!', '')
             return
 
         self.vk = vk_session.get_api()
@@ -111,9 +111,11 @@ class VkCheck:
         cur = 1
         for group in groups:
             try:
-                post = self.vk.wall.get(owner_id=-1*group['id'], count=1)['items'][0]
-                if post['comments']['can_post'] == 1:
-                    self.win.add_group(group['name'], group['id'])
+                post = self.vk.wall.get(owner_id=-1*group['id'], count=1)
+                if post['count'] > 0:
+                    post = post['items'][0]
+                    if post['comments']['can_post'] == 1:
+                        self.win.add_group(group['name'], group['id'])
             except vk_api.vk_api.ApiError:
                 self.win.add_comment('{} seems closed'.format(group['name']), '')
             self.win.set_grp_progress(cur, total)
